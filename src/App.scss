@@ -1,0 +1,25 @@
+.app {
+    height: 100vh;
+
+    .sections {
+        width: 100%;
+        // height is calculating 100 percent viewport minus the topbar height which is 17 pixels
+        height: calc(100vh - 17px);
+        background-color: slateblue;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; // this hides the scroll bar for firefox
+        &::-webkit-scrollbar{ //this hides scrollbar for other browsers
+            display: none;
+        }
+
+        // this is "for each element inside"
+        > * {
+            width: 100;
+            height: calc(100vh - 17px);
+            scroll-snap-align: start;
+        }
+    }
+}
