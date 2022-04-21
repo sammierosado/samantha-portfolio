@@ -9,18 +9,24 @@ export default function topBar() {
                 <div className="left" >
                     <a href="#intro" className="logo">Hello</a>
                     <div className="itemContainer">
-                        <PersonIcon className="icon"/>
+                        <PersonIcon className="icon" />
                         <span>(111) 222-3333</span>
                     </div>
 
                     <div className="itemContainer">
-                        <TwitterIcon className="icon"/>
+                        <TwitterIcon className="icon" />
                         <span> <a href=""></a>@sammiedaprogrammer</span>
                     </div>
                 </div>
 
                 <div className="right">
-                    this is the right side
+                    <div className="hamburger">
+                        <span className="line1">
+
+                        </span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
+                    </div>
                 </div>
             </div>
         </div>
